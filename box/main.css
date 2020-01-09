@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:400,700');
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #212121;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  margin: 0;
+  height: 100%;
+}
+
+.cut {
+  font-family: 'Fira Sans Extra Condensed', Arial, sans-serif;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  font-size: 16px;
+  background-color: #fff;
+  color: #111;
+  line-height: 1.2em;
+  text-align: left;
+}
+
+.cut *,
+.cut *:before,
+.cut *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.cut img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.cut figcaption {
+  padding: 10px;
+}
+
+.cut h3 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin: 0 0 4px;
+}
+
+.cut .price {
+  margin: 8px 0;
+  font-weight: 700;
+  color: #4da3e2;
+  font-size: 1.5rem;
+}
+
+.cut .icons {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.cut .icons a {
+  margin: 2px;
+  opacity: 0;
+  -webkit-transform: translateY(50%);
+  transform: translateY(50%);
+}
+
+.cut .icons a i {
+  display: block;
+  font-size: 23.52941176px;
+  line-height: 40px;
+  width: 40px;
+  background-color: #ffffff;
+  text-align: center;
+  color: #000000;
+}
+
+.cut .icons a i:hover {
+  background-color: #4da3e2;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.cut:hover a,
+.cut.hover a {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.cut:hover a:nth-child(2),
+.cut.hover a:nth-child(2) {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+.cut:hover a:nth-child(3),
+.cut.hover a:nth-child(3) {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
